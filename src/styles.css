@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilo para el sidebar */
+nav {
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilo para el contenido principal */
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .wrapper app-sidebar {
+    flex: 0 0 200px;
+  }
+  
+  .wrapper router-outlet {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  body{
+    background-color: cyan;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
