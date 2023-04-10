@@ -1,3 +1,23 @@
 nav {
     height: 100%;
 }
+
+.navegacion-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.navegacion-item.active {
+  background-color: black;
+  color: #fff;
+  right: -30px;
+  display: flex;
+  position: relative;
+}
+
+
+
+

@@ -25,7 +25,7 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   height: 100%;
-  background-color: #fff;
+  background-color: initial;
   width: 100%;
 }
 
@@ -54,6 +54,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-left: 7.5%; /* ajustar al ancho del sidebar */
+  background-color: #fff;
 }
 
 .navegacion {
