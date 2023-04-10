@@ -1,50 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
 /* Estilo para el sidebar */
 nav {
-    background-color: #333;
-    color: #fff;
-    height: 100%;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Estilo para el contenido principal */
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-  }
-  
-  .wrapper app-sidebar {
-    flex: 0 0 200px;
-  }
-  
-  .wrapper router-outlet {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  body{
-    background-color: cyan;
-  }
+  background-color: #1a5a81;
+  color: #fff;
+  height: 100%;
+  padding: 10px;
+}
 
-  html, body {
-    height: 100%;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .wrapper {
-    height: 100%;
-  }
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo para el contenido principal */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+}
+
+.wrapper app-sidebar {
+  flex: 0 0 200px;
+  width: 20%;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.Contenido {
+  padding: 50px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #999;
+  height: 80%;
+  width: 80%; /* ajustar al ancho disponible */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 7.5%; /* ajustar al ancho del sidebar */
+}
+
+.navegacion {
+  margin-top: 50px;
+}
