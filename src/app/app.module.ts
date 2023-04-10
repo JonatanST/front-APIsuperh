@@ -7,6 +7,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CreacionseresComponent } from './creacionseres/creacionseres.component';
+import { MutantesComponent } from './mutantes/mutantes.component';
+import { VehiculosComponent } from './vehiculos/vehiculos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +20,15 @@ import { CreacionseresComponent } from './creacionseres/creacionseres.component'
     SidebarComponent,
     DashboardComponent,
     InicioComponent,
-    CreacionseresComponent
+    CreacionseresComponent,
+    MutantesComponent,
+    VehiculosComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
