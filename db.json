@@ -1,0 +1,63 @@
+{
+  "seres": [
+    {
+      "id": 1,
+      "nombre": "Iron Man",
+      "grupo": "Súper Héroe",
+      "ciudad": "Nueva York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Tecnopatía",
+      "vehiculo": "no aplica"
+    },
+    {
+      "id": 2,
+      "nombre": "Spider-Man",
+      "grupo": "Súper Héroe",
+      "ciudad": "Nueva York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Agilidad sobrehumana",
+      "vehiculo": "spider-mobile"
+    },
+    {
+      "id": 3,
+      "nombre": "Thor",
+      "grupo": "Súper Héroe",
+      "ciudad": "Asgard",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Nueva York",
+      "vehiculo": "no aplica"
+    },
+    {
+      "id": 4,
+      "nombre": "Capitán América",
+      "grupo": "Súper Héroe",
+      "ciudad": "Washington D.C.",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Nueva York",
+      "vehiculo": "no aplica"
+    },
+    {
+      "id": 5,
+      "nombre": "Thanos",
+      "grupo": "Villano",
+      "ciudad": "Desconocido",
+      "condicion": "Muerto",
+      "tipo_superpoder": "Superfuerza",
+      "vehiculo": "no aplica"
+    }
+  ],
+  "vehiculos": [
+    {
+      "id": 1,
+      "nombre": "Quinjet"
+    },
+    {
+      "id": 2,
+      "nombre": "Batimóvil"
+    },
+    {
+      "id": 3,
+      "nombre": "Spider-Móvil"
+    }
+  ]
+}
