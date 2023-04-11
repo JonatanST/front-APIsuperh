@@ -63,3 +63,9 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.paginador{
+  display: grid;
+  text-align: center;
+}

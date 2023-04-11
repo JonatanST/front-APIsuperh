@@ -15,6 +15,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { MatTableModule } from '@angular/material/table';
     MatSlideToggleModule,
     MatPaginatorModule,
     MatTableModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   exports: [
     BrowserAnimationsModule,
