@@ -10,6 +10,7 @@
         <th scope="col">CONDICIÓN</th>
         <th scope="col">TIPO PODER</th>
         <th scope="col">VEHÍCULO</th>
+        <th scope="col" style="text-align: center;">EDITAR</th>
       </tr>
     </thead>
     <tbody>
@@ -21,6 +22,8 @@
         <td>{{ item.condicion }}</td>
         <td>{{ item.tipo_superpoder }}</td>
         <td>{{ item.vehiculo }}</td>
+        <td style="text-align: center;"><i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)"></i></td>
+
       </tr>
     </tbody>
   </table>

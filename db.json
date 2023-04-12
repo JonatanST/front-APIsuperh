@@ -46,9 +46,9 @@
       "vehiculo": "no aplica"
     },
     {
-      "nombre": "Jonatan",
+      "nombre": "Steve",
       "grupo": "Villano",
-      "ciudad": "Soacha",
+      "ciudad": "Bogotaaaa",
       "condicion": "Libertad",
       "tipo_superpoder": "Super hambre",
       "vehiculo": "Moto",
@@ -62,7 +62,30 @@
       "tipo_superpoder": "Super Gay",
       "vehiculo": "Moto",
       "id": 7
+    },
+    {
+      "condicion": "2",
+      "nombre": "Jonatan",
+      "grupo": "Super Heroe",
+      "ciudad": "asgard",
+      "tipo_superpoder": "Super Fuerza",
+      "vehiculo": "no aplica",
+      "id": 8
+    },
+    {
+      "nombre": "Victor",
+      "grupo": "Villano",
+      "ciudad": "Soacha",
+      "condicion": "Detenido",
+      "tipo_superpoder": "Super Gay",
+      "vehiculo": "Moto",
+      "id": 9
     }
   ],
-  "vehiculos": []
+  "vehiculos": [
+    {
+      "nombre": "spider-mobile",
+      "id": 1
+    }
+  ]
 }

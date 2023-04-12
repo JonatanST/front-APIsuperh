@@ -8,3 +8,8 @@ select {
 .form-group {
   margin-bottom: 10px !important;
 }
+
+.btn-primary {
+  background-color: #1a5a81;
+  margin-top: 10px;
+}
