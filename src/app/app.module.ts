@@ -17,6 +17,7 @@ import { MatTableModule } from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatPaginatorModule,
     MatTableModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
   ],
   exports: [
     BrowserAnimationsModule,

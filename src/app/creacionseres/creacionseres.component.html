@@ -1,65 +1,29 @@
 <div class="Contenido">
-  <form>
-    <div class="row">
-      <div class="col">
-        <label> <b> Nombre Personaje</b></label>
-        <input type="text" class="form-control" placeholder="Nombre" />
-      </div>
-      <div class="col">
-        <label><b>Tipo De Personaje</b></label>
-        <select id="inputState" class="form-control">
-          <option>Super Heroe</option>
-          <option>Villano</option>
-        </select>
-      </div>
-      <div class="col">
-        <label><b> Ciudad</b></label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Ciudad Operación"
-        />
-      </div>
+  <form (submit)="enviarDatos($event)">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="nuevoMutante.nombre" name="nombre" required>
     </div>
-    <br />
-    <div class="row">
-      <div class="col">
-        <label><b>Condición</b></label>
-        <select id="inputState" class="form-control">
-          <option>Libertad</option>
-          <option>Preso</option>
-          <option>Muerto</option>
-          <option>Desconocido</option>
-        </select>
-      </div>
-      <div class="col">
-        <label><b> Poder(es)</b></label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Poder del personaje"
-        />
-      </div>
-      <div class="col">
-        <label><b> Tiene vehiculo</b></label>
-        <select id="inputState" class="form-control">
-          <option>No Aplica</option>
-          <option>Aplica</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <label for="grupo">Grupo:</label>
+      <input type="text" class="form-control" id="grupo" [(ngModel)]="nuevoMutante.grupo" name="grupo" required>
     </div>
-    <br />
-    <div class="row">
-      <div class="col">
-        <label><b> Nombre de vehiculo</b></label>
-        <input type="text" class="form-control" placeholder="Nombre vehiculo" />
-      </div>
-      <div class="col"></div>
-      <div class="col"></div>
+    <div class="form-group">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" class="form-control" id="ciudad" [(ngModel)]="nuevoMutante.ciudad" name="ciudad" required>
     </div>
-    <br />
-    <button type="submit" class="btn btn-primary">
-      <b> Crear Personaje </b>
-    </button>
+    <div class="form-group">
+      <label for="condicion">Condición:</label>
+      <input type="text" class="form-control" id="condicion" [(ngModel)]="nuevoMutante.condicion" name="condicion" required>
+    </div>
+    <div class="form-group">
+      <label for="tipo_superpoder">Tipo de superpoder:</label>
+      <input type="text" class="form-control" id="tipo_superpoder" [(ngModel)]="nuevoMutante.tipo_superpoder" name="tipo_superpoder" required>
+    </div>
+    <div class="form-group">
+      <label for="vehiculo">Vehículo:</label>
+      <input type="text" class="form-control" id="vehiculo" [(ngModel)]="nuevoMutante.vehiculo" name="vehiculo" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar datos</button>
   </form>
 </div>

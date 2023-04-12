@@ -1,6 +1,27 @@
 <p>vehiculos works!</p>
-<div class="Contenido">
 
 
+  <div class="Contenido">
+    <i class="fa-solid fa-user"></i>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#ID</th>
+          <th scope="col">NOMBRE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of datos | paginate : config">
+          <td>{{ item.id }}</td>
+          <td>{{ item.nombre }}</td>
+        </tr>
+      </tbody>
+    </table>
 
-</div>
+    <div class="paginador">
+      <pagination-controls
+        (pageChange)="config.currentPage = $event"
+      ></pagination-controls>
+    </div>
+  </div>
+

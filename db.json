@@ -44,6 +44,24 @@
       "condicion": "Muerto",
       "tipo_superpoder": "Superfuerza",
       "vehiculo": "no aplica"
+    },
+    {
+      "nombre": "Jonatan",
+      "grupo": "Villano",
+      "ciudad": "Soacha",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Super hambre",
+      "vehiculo": "Moto",
+      "id": 6
+    },
+    {
+      "nombre": "Victor",
+      "grupo": "Super Heroe",
+      "ciudad": "Bogotá",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Super Gay",
+      "vehiculo": "Moto",
+      "id": 7
     }
   ],
   "vehiculos": [

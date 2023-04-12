@@ -10,7 +10,7 @@ export class MutantesComponent {
   datos: any[] = [];
 
   config = {
-    itemsPerPage: 2,
+    itemsPerPage: 10,
     currentPage: 1,
     totalItems: this.datos.length,
   };
