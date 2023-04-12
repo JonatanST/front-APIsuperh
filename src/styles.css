@@ -43,17 +43,18 @@ body {
   height: 100%;
 }
 
+/* Estilo para el cuadro de contenido */
 .Contenido {
   padding: 50px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #999;
   height: 80%;
-  width: 80%; /* ajustar al ancho disponible */
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-left: 7.5%; /* ajustar al ancho del sidebar */
+  margin-left: 7.5%;
   background-color: #fff;
 }
 
@@ -64,8 +65,11 @@ body {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
+/* Estilos para Paginador*/
 .paginador{
   display: grid;
   text-align: center;
 }
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/css/regular.css";

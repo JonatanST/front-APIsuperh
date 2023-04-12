@@ -1,27 +1,40 @@
-<p>vehiculos works!</p>
-
-
-  <div class="Contenido">
-    <i class="fa-solid fa-user"></i>
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#ID</th>
-          <th scope="col">NOMBRE</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of datos | paginate : config">
-          <td>{{ item.id }}</td>
-          <td>{{ item.nombre }}</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="paginador">
-      <pagination-controls
-        (pageChange)="config.currentPage = $event"
-      ></pagination-controls>
-    </div>
+<div class="Contenido">
+  <div class="agregar">
+    <i
+      class="fa-solid fa-circle-plus fa-2xl"
+      title="Agregar Vehiculo"
+      style="color: #1a5a81"
+      (click)="mostrarFormulario()"
+    ></i>
   </div>
 
+  <table class="table table-striped" style="text-align: center;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">NOMBRE</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of datos | paginate : config">
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>
+          <i
+            class="fa fa-trash fa-xl"
+            (click)="eliminarDato(item.id)"
+            style="color: red"
+            title="Eliminar Vehículo"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="paginador">
+    <pagination-controls
+      (pageChange)="config.currentPage = $event"
+    ></pagination-controls>
+  </div>
+</div>

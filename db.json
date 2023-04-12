@@ -64,18 +64,5 @@
       "id": 7
     }
   ],
-  "vehiculos": [
-    {
-      "id": 1,
-      "nombre": "Quinjet"
-    },
-    {
-      "id": 2,
-      "nombre": "Batimóvil"
-    },
-    {
-      "id": 3,
-      "nombre": "Spider-Móvil"
-    }
-  ]
+  "vehiculos": []
 }
