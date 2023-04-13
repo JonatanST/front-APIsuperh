@@ -1,7 +1,3 @@
-nav {
-  height: 100%;
-}
-
 .navegacion-item {
   border: 1px solid #ccc;
   padding: 10px;
@@ -15,4 +11,12 @@ nav {
   right: -30px;
   display: flex;
   position: relative;
+}
+
+/* Estilo para el sidebar */
+nav {
+  background-color: #1a5a81 !important;
+  color: #fff;
+  height: 100%;
+  padding: 10px;
 }

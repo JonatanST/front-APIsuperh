@@ -1,101 +1,97 @@
 {
   "seres": [
     {
-      "id": 1,
       "nombre": "Iron Man",
       "grupo": "Súper Héroe",
-      "ciudad": "Nueva York",
-      "condicion": "Libertad",
-      "tipo_superpoder": "Tecnopatía",
-      "vehiculo": "no aplica"
-    },
-    {
-      "id": 2,
-      "nombre": "Spider-Man",
-      "grupo": "Súper Héroe",
-      "ciudad": "Nueva York",
-      "condicion": "Libertad",
-      "tipo_superpoder": "Agilidad sobrehumana",
-      "vehiculo": "spider-mobile"
-    },
-    {
-      "id": 3,
-      "nombre": "Thor",
-      "grupo": "Súper Héroe",
-      "ciudad": "Asgard",
-      "condicion": "Libertad",
-      "tipo_superpoder": "Nueva York",
-      "vehiculo": "no aplica"
-    },
-    {
-      "id": 4,
-      "nombre": "Capitán América",
-      "grupo": "Súper Héroe",
-      "ciudad": "Washington D.C.",
+      "ciudad": "New York",
       "condicion": "Desconocido",
-      "tipo_superpoder": "Nueva York",
-      "vehiculo": "no aplica"
+      "tipo_superpoder": "Tecnopatia",
+      "vehiculo": "No Aplica",
+      "id": 1
     },
     {
-      "id": 5,
-      "nombre": "Thanos",
-      "grupo": "Villano",
-      "ciudad": "Desconocido",
-      "condicion": "Muerto",
-      "tipo_superpoder": "Superfuerza",
-      "vehiculo": "no aplica"
+      "nombre": "jonatan",
+      "id": 2,
+      "ciudad": "Soachingtown"
     },
     {
-      "nombre": "Steve",
-      "grupo": "Villano",
-      "ciudad": "Bogotaaaa",
+      "nombre": "Luisa",
+      "grupo": "Súper Héroe",
+      "ciudad": "Soacha",
       "condicion": "Libertad",
-      "tipo_superpoder": "Super hambre",
+      "tipo_superpoder": "Echiceria",
+      "vehiculo": "Dosh patas",
+      "id": 3
+    },
+    {
+      "nombre": "Lucas",
+      "grupo": "Villano",
+      "ciudad": "Bogota",
+      "condicion": "Detenido",
+      "tipo_superpoder": "Dañino",
       "vehiculo": "Moto",
+      "id": 4
+    },
+    {
+      "nombre": "Elissa",
+      "grupo": "Súper Héroe",
+      "ciudad": "New York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Tecnopatia",
+      "vehiculo": "Monopatin",
+      "id": 5
+    },
+    {
+      "nombre": "Iron Man",
+      "grupo": "Villano",
+      "ciudad": "New York",
+      "condicion": "Detenido",
+      "tipo_superpoder": "Tecnopatia",
+      "vehiculo": "No Aplica",
       "id": 6
     },
     {
-      "nombre": "Victor",
-      "grupo": "Super Heroe",
-      "ciudad": "Bogotá",
-      "condicion": "Libertad",
-      "tipo_superpoder": "Super Gay",
-      "vehiculo": "Moto",
-      "id": 7
-    },
-    {
-      "condicion": "2",
-      "nombre": "Jonatan",
-      "grupo": "Super Heroe",
-      "ciudad": "asgard",
-      "tipo_superpoder": "Super Fuerza",
-      "vehiculo": "no aplica",
-      "id": 8
-    },
-    {
-      "nombre": "Victor",
-      "grupo": "Villano",
-      "ciudad": "Soacha",
+      "nombre": "Quinjet",
+      "grupo": "Súper Héroe",
+      "ciudad": "New York",
       "condicion": "Detenido",
-      "tipo_superpoder": "Super Gay",
-      "vehiculo": "Moto",
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
+      "tipo_superpoder": "Tecnopatia",
+      "vehiculo": "No Aplica",
+      "id": 7
     }
   ],
   "vehiculos": [
     {
-      "nombre": "spider-mobile",
+      "nombre": "Spider-Mobile",
       "id": 1
     },
     {
-      "nombre": "batimovil",
+      "nombre": "Quinjet",
       "id": 2
+    },
+    {
+      "nombre": "Blackbird",
+      "id": 3
+    },
+    {
+      "nombre": "La camioneta de Punisher",
+      "id": 4
+    },
+    {
+      "nombre": "Fantasti-Car",
+      "id": 5
+    },
+    {
+      "nombre": "Aerodeslizadores del Duende",
+      "id": 6
+    },
+    {
+      "nombre": "Helicarriers",
+      "id": 7
+    },
+    {
+      "nombre": "La nave de Galactus",
+      "id": 8
     }
   ]
 }

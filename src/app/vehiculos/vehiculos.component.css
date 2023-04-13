@@ -2,3 +2,6 @@
   justify-content: right;
   display: flex;
 }
+td{
+  color: white !important;
+}

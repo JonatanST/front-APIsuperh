@@ -1,9 +1,5 @@
-/* Estilo para el sidebar */
-nav {
-  background-color: #1a5a81;
-  color: #fff;
-  height: 100%;
-  padding: 10px;
+nav{
+  background-color: transparent;
 }
 
 nav ul {
@@ -48,7 +44,7 @@ body {
   padding: 50px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #999;
-  height: 80%;
+  height: 90%;
   width: 80%;
   position: absolute;
   top: 50%;
@@ -58,6 +54,9 @@ body {
   background-color: #fff;
   overflow: auto;
   overflow-x: hidden;
+  background-image: url(../src/assets/mravel3.jpg);
+  background-size: cover;
+  
 }
 
 .navegacion {
