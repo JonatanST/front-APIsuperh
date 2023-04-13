@@ -1,97 +1,237 @@
 {
   "seres": [
     {
-      "nombre": "Iron Man",
+      "nombre": "Spider-Man",
       "grupo": "Súper Héroe",
-      "ciudad": "New York",
-      "condicion": "Desconocido",
-      "tipo_superpoder": "Tecnopatia",
-      "vehiculo": "No Aplica",
+      "ciudad": "Nueva York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Sentido arácnido, fuerza sobrehumana, capacidad de escalar paredes",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Spider-Mobile",
       "id": 1
     },
     {
-      "nombre": "jonatan",
-      "id": 2,
-      "ciudad": "Soachingtown"
+      "nombre": "Iron Man",
+      "grupo": "Súper Héroe",
+      "ciudad": "California",
+      "condicion": "Desconocido",
+      "vehiculo": "Si tiene",
+      "tipo_superpoder": "Tecnopatia",
+      "nombre_vehiculo": "Armadura de Iron Man",
+      "id": 2
     },
     {
-      "nombre": "Luisa",
+      "nombre": "Thor",
       "grupo": "Súper Héroe",
-      "ciudad": "Soacha",
+      "ciudad": "Asgard",
       "condicion": "Libertad",
-      "tipo_superpoder": "Echiceria",
-      "vehiculo": "Dosh patas",
+      "tipo_superpoder": "Fuerza sobrehumana, control del clima, capacidad de volar y manejo del martillo Mjolnir",
+      "vehiculo": "No tiene",
       "id": 3
     },
     {
-      "nombre": "Lucas",
-      "grupo": "Villano",
-      "ciudad": "Bogota",
-      "condicion": "Detenido",
-      "tipo_superpoder": "Dañino",
-      "vehiculo": "Moto",
+      "nombre": "Wolverine",
+      "grupo": "Súper Héroe",
+      "ciudad": "Alberta",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Sentidos agudos, factor de curación sobrehumano, garras de adamantium",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Batimóvil",
       "id": 4
     },
     {
-      "nombre": "Elissa",
+      "nombre": "Hulk",
       "grupo": "Súper Héroe",
-      "ciudad": "New York",
+      "ciudad": "Dakota del Sur",
       "condicion": "Libertad",
-      "tipo_superpoder": "Tecnopatia",
-      "vehiculo": "Monopatin",
+      "tipo_superpoder": "Fuerza sobrehumana, regeneración, resistencia sobrehumana",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Hulk Mobile",
       "id": 5
     },
     {
-      "nombre": "Iron Man",
-      "grupo": "Villano",
-      "ciudad": "New York",
-      "condicion": "Detenido",
-      "tipo_superpoder": "Tecnopatia",
-      "vehiculo": "No Aplica",
+      "nombre": "Capitán América",
+      "grupo": "Súper Héroe",
+      "ciudad": "Nueva York",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Súper fuerza, velocidad y resistencia, habilidades de liderazgo",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Captain America's Motorcycle",
       "id": 6
     },
     {
-      "nombre": "Quinjet",
+      "nombre": "Black Widow",
       "grupo": "Súper Héroe",
-      "ciudad": "New York",
-      "condicion": "Detenido",
-      "tipo_superpoder": "Tecnopatia",
-      "vehiculo": "No Aplica",
+      "ciudad": "Stalingrado",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Habilidades de espionaje, artes marciales, puntería",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Moto de Viuda Negra",
       "id": 7
+    },
+    {
+      "nombre": "Doctor Strange",
+      "grupo": "Súper Héroe",
+      "ciudad": "Nueva York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Poderes mágicos, manipulación del tiempo y el espacio",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Capa de levitación",
+      "id": 8
+    },
+    {
+      "nombre": "Magneto",
+      "grupo": "Villano",
+      "ciudad": "Asteroid M",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Poderes magnéticos, control del metal",
+      "vehiculo": "No tiene",
+      "id": 9
+    },
+    {
+      "nombre": "Loki",
+      "grupo": "Villano",
+      "ciudad": "Asgard",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Habilidades mágicas, cambiaformas, capacidad de controlar mentes",
+      "vehiculo": "No tiene",
+      "id": 10
+    },
+    {
+      "nombre": "Doctor Octopus",
+      "grupo": "Villano",
+      "ciudad": "Nueva York",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Tentáculos mecánicos, genio científico",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Octo-Ship",
+      "id": 11
+    },
+    {
+      "nombre": "Red Skull",
+      "grupo": "Villano",
+      "ciudad": "Berlín",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Liderazgo nazi, habilidades de lucha, intelecto sobrehumano",
+      "vehiculo": "No tiene",
+      "id": 12
+    },
+    {
+      "nombre": "Thanos",
+      "grupo": "Villano",
+      "ciudad": "Titán",
+      "condicion": "Desconocido",
+      "tipo_superpoder": "Fuerza sobrehumana, invulnerabilidad, manipulación cósmica ",
+      "vehiculo": "Si tiene",
+      "nombre_vehiculo": "Thanos' Starship",
+      "id": 13
     }
   ],
   "vehiculos": [
     {
-      "nombre": "Spider-Mobile",
+      "nombre": "Blackbird",
+      "tipo": "Aéreo",
       "id": 1
     },
     {
-      "nombre": "Quinjet",
+      "nombre": "Fantasti-Car",
+      "tipo": "Aéreo",
       "id": 2
     },
     {
-      "nombre": "Blackbird",
+      "nombre": "Helicarrier",
+      "tipo": "Aéreo",
       "id": 3
     },
     {
-      "nombre": "La camioneta de Punisher",
+      "nombre": "Silver Surfer's Surfboard",
+      "tipo": "Aéreo",
       "id": 4
     },
     {
-      "nombre": "Fantasti-Car",
+      "nombre": "Spider-Mobile",
+      "tipo": "Terrestre",
       "id": 5
     },
     {
-      "nombre": "Aerodeslizadores del Duende",
+      "nombre": "Quinjet",
+      "tipo": "Aéreo",
       "id": 6
     },
     {
-      "nombre": "Helicarriers",
+      "nombre": "Hulk Mobile",
+      "tipo": "Terrestre",
       "id": 7
     },
     {
-      "nombre": "La nave de Galactus",
+      "nombre": "X-Men Stratojet",
+      "tipo": "Aéreo",
       "id": 8
+    },
+    {
+      "nombre": "Iron Man's Armor",
+      "tipo": "Terrestre",
+      "id": 9
+    },
+    {
+      "nombre": "Captain America's Motorcycle",
+      "tipo": "Terrestre",
+      "id": 10
+    },
+    {
+      "nombre": "Goblin Glider",
+      "tipo": "Aéreo",
+      "id": 11
+    },
+    {
+      "nombre": "Planeador Duende",
+      "tipo": "Aéreo",
+      "id": 12
+    },
+    {
+      "nombre": "Camioneta de batalla de Punisher",
+      "tipo": "Terrestre",
+      "id": 13
+    },
+    {
+      "nombre": "Armadura de Máquina de Guerra",
+      "tipo": "Aéreo/Terrestre",
+      "id": 14
+    },
+    {
+      "nombre": "Moto de Viuda Negra",
+      "tipo": "Terrestre",
+      "id": 15
+    },
+    {
+      "nombre": "Capa de levitación",
+      "tipo": "Aéreo",
+      "id": 16
+    },
+    {
+      "nombre": "Tabla Silver Surfer",
+      "tipo": "Aéreo",
+      "id": 17
+    },
+    {
+      "nombre": "Armadura de Iron Man",
+      "tipo": "Aéreo/Terrestre",
+      "id": 18
+    },
+    {
+      "nombre": "Batimóvil",
+      "tipo": "Terrestre",
+      "id": 19
+    },
+    {
+      "nombre": "Octo-Ship",
+      "tipo": "Terrestre",
+      "id": 20
+    },
+    {
+      "nombre": "Thanos' Starship",
+      "tipo": "Aéreo",
+      "id": 21
     }
   ]
 }

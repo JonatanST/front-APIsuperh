@@ -42,6 +42,7 @@ export class VehiculosComponent {
   enviarDatos(form: HTMLFormElement): Observable<any> {
     const nuevoVehiculo = {
       nombre: form['nombre'].value,
+      tipo: form['tipo'].value,
     };
     return this.http
       .post('http://localhost:3000/vehiculos', nuevoVehiculo)
@@ -65,7 +66,9 @@ export class VehiculosComponent {
         '<form id="formulario">' +
         '<div class="form-group">' +
         '<label for="nombre">Nombre Vehículo:</label>' +
-        '<input type="text" class="form-control" id="nombre" [(ngModel)]="nuevoVehiculo.nombre" name="nombre" required />' +
+        '<input type="text" class="form-control" id="nombre" [(ngModel)]="nuevoVehiculo.nombre" name="nombre" required autocomplete="off"/>' +
+        '<label for="tipo" style="margin-top: 25px">Tipo Vehículo:</label>' +
+        '<select class="form-control" id="tipo" [(ngModel)]="nuevoVehiculo.tipo" name="tipo" required><option value="">Seleccionar</option><option value="Terrestre">Terrestre</option><option value="Acuático">Acuático</option><option value="Aéreo">Aéreo</option><option value="Aéreo/Terrestre">Aéreo/Terrestre</option></select>' +
         '</div>' +
         '</form>',
       showCancelButton: true,
@@ -76,12 +79,15 @@ export class VehiculosComponent {
         return new Promise<void>((resolve, reject) => {
           const form = document.getElementById('formulario') as HTMLFormElement;
           const nombre = form['nombre'].value;
+          const tipo = form['tipo'].value;
 
           // Validar si el vehículo ya existe
           if (this.datos.some((item: any) => item.nombre === nombre)) {
             const input = document.getElementById('nombre') as HTMLInputElement;
             input.value = '';
-            Swal.showValidationMessage('Este vehículo ya se encuentra registrado.');
+            Swal.showValidationMessage(
+              'Este vehículo ya se encuentra registrado.'
+            );
             reject('Vehículo duplicado');
             return;
           }

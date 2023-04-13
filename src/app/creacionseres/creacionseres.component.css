@@ -7,9 +7,16 @@ select {
 
 .form-group {
   margin-bottom: 10px !important;
+  font-size: 17px;
+  font: bold !important;
+  color: white;
 }
 
 .btn-primary {
   background-color: #1a5a81;
   margin-top: 10px;
+}
+
+background {
+  opacity: .4;
 }

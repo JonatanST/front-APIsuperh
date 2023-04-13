@@ -9,11 +9,17 @@ import { Component, OnInit  } from '@angular/core';
 export class CreacionseresComponent implements OnInit{
   datos: any;
   nuevoMutante: any = {};
+  vehiculos: any;
+  vehiculoSeleccionado: any;
 
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
     this.http.get('http://localhost:3000/seres').subscribe((res: any) => {
       this.datos = res;
+    });
+
+    this.http.get<any[]>('http://localhost:3000/vehiculos').subscribe(datos => {
+      this.vehiculos = datos;
     });
   }
   /* Metodo para crear mutantes nuevos */

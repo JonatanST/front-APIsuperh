@@ -56,7 +56,6 @@ body {
   overflow-x: hidden;
   background-image: url(../src/assets/mravel3.jpg);
   background-size: cover;
-  
 }
 
 .navegacion {
@@ -76,6 +75,7 @@ body {
 .paginador {
   display: grid;
   text-align: center;
+  background-color: azure;
 }
 
 @import "~@fortawesome/fontawesome-free/css/all.css";

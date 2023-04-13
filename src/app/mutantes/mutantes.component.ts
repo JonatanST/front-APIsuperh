@@ -24,6 +24,7 @@ export class MutantesComponent {
       console.log(this.datos); // Ver los datos en la consola
     });
   }
+
   /* Metodo para editar datos nombre y ciudad del mutante*/
   editarSeres(item: any) {
     Swal.fire({
