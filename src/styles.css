@@ -32,6 +32,7 @@ nav ul li a {
 
 body {
   background-color: gainsboro;
+  overflow: hidden;
 }
 
 html,
@@ -54,8 +55,15 @@ body {
   background-color: #fff;
   overflow: auto;
   overflow-x: hidden;
-  background-image: url(../src/assets/mravel3.jpg);
+  background-image: url(../src/assets/mravel32.jpg);
   background-size: cover;
+}
+
+@media screen and (min-width: 1600px) {
+  .Contenido {
+    max-width: 85%;
+    margin-left: 5%;
+  }
 }
 
 .navegacion {
@@ -75,7 +83,7 @@ body {
 .paginador {
   display: grid;
   text-align: center;
-  background-color: azure;
+  background-color: brown;
 }
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
@@ -93,4 +101,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #888;
   border-radius: 5px;
+}
+
+#buscador{
+  width: 100%;
 }

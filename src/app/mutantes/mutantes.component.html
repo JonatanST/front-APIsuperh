@@ -1,5 +1,40 @@
-
 <div class="Contenido">
+  <div class="row">
+    <div class="col">
+      <div
+        class="form-group"
+        id="buscador"
+        style="margin-top: -40px; margin-bottom: 10px"
+      >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar por Mutante..."
+          [(ngModel)]="busqueda"
+          name="busqueda"
+          (input)="buscarMutante()"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div
+        class="form-group"
+        id="buscador"
+        style="margin-top: -40px; margin-bottom: 10px"
+      >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar por ciudad..."
+          [(ngModel)]="busqueda2"
+          name="busqueda2"
+          (input)="buscarCiudad()"
+        />
+      </div>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
@@ -11,11 +46,11 @@
         <th scope="col">TIPO PODER</th>
         <th scope="col">VEHÍCULO</th>
         <th scope="col">NOMBRE VEHÍCULO</th>
-        <th scope="col" style="text-align: center;">EDITAR</th>
+        <th scope="col" style="text-align: center">EDITAR</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of datos | paginate: config">
+      <tr *ngFor="let item of datos | paginate : config">
         <td>{{ item.id }}</td>
         <td>{{ item.nombre }}</td>
         <td>{{ item.grupo }}</td>
@@ -24,13 +59,16 @@
         <td>{{ item.tipo_superpoder }}</td>
         <td>{{ item.vehiculo }}</td>
         <td>{{ item.nombre_vehiculo }}</td>
-        <td style="text-align: center;"><i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)"></i></td>
-
+        <td style="text-align: center">
+          <i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)"></i>
+        </td>
       </tr>
     </tbody>
   </table>
 
-<div class="paginador">
-  <pagination-controls (pageChange)="config.currentPage = $event"></pagination-controls>
-</div>
+  <div class="paginador">
+    <pagination-controls
+      (pageChange)="config.currentPage = $event"
+    ></pagination-controls>
+  </div>
 </div>

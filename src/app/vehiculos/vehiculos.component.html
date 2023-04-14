@@ -1,14 +1,35 @@
-<div class="Contenido">
-  <div class="agregar">
-    <i
-      class="fa-solid fa-circle-plus fa-2xl"
-      title="Agregar Vehiculo"
-      style="color: white"
-      (click)="mostrarFormulario()"
-    ></i>
+<div class="Contenido" style="overflow: auto">
+  <div class="row">
+    <div class="col" style="margin-top: -40px">
+      <div class="form-group" id="buscador" >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar vehículo..."
+          [(ngModel)]="busqueda"
+          name="busqueda"
+          (input)="buscarVehiculo()"
+        />
+      </div>
+    </div>
+    <div class="col" style="margin-top: -40px"></div>
+    <div class="col" style="margin-top: -17px">
+      <div class="agregar">
+        <i
+          class="fa-solid fa-circle-plus fa-2xl"
+          title="Agregar Vehiculo"
+          style="color: white"
+          (click)="mostrarFormulario()"
+        ></i>
+      </div>
+    </div>
   </div>
 
-  <table class="table table-striped" style="text-align: center; margin-top: 20px;">
+
+  <table
+    class="table table-striped"
+    style="text-align: center; margin-top: 20px"
+  >
     <thead class="thead-dark">
       <tr>
         <th scope="col">#ID</th>

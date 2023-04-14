@@ -9,6 +9,8 @@ import Swal from 'sweetalert2';
 })
 export class MutantesComponent {
   datos: any[] = [];
+  busqueda: string = '';
+  busqueda2: string = '';
 
   config = {
     itemsPerPage: 10,
@@ -57,5 +59,25 @@ export class MutantesComponent {
         );
       }
     });
+  }
+
+  buscarMutante() {
+    if (this.busqueda.trim() !== '') {
+      this.datos = this.datos.filter((mutante) => {
+        return mutante.nombre.toLowerCase().includes(this.busqueda.toLowerCase());
+      });
+    } else {
+      this.ngOnInit();
+    }
+  }
+
+  buscarCiudad() {
+    if (this.busqueda2.trim() !== '') {
+      this.datos = this.datos.filter((mutante) => {
+        return mutante.ciudad.toLowerCase().includes(this.busqueda2.toLowerCase());
+      });
+    } else {
+      this.ngOnInit();
+    }
   }
 }

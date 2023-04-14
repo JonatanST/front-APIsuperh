@@ -3,7 +3,7 @@
     {
       "nombre": "Spider-Man",
       "grupo": "Súper Héroe",
-      "ciudad": "Nueva York",
+      "ciudad": "New York",
       "condicion": "Libertad",
       "tipo_superpoder": "Sentido arácnido, fuerza sobrehumana, capacidad de escalar paredes",
       "vehiculo": "Si tiene",
@@ -230,7 +230,7 @@
     },
     {
       "nombre": "Thanos' Starship",
-      "tipo": "Aéreo",
+      "tipo": "Aéreo/Terrestre",
       "id": 21
     }
   ]

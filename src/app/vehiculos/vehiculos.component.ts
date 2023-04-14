@@ -12,6 +12,7 @@ import { map, catchError } from 'rxjs/operators';
 export class VehiculosComponent {
   datos: any[] = [];
   nuevoVehiculo: any = {};
+  busqueda: string = '';
 
   config = {
     itemsPerPage: 10,
@@ -107,11 +108,22 @@ export class VehiculosComponent {
                 resolve();
               },
               (error) => {
-                reject(error);
+                reject(error); console.log(error)
               }
             );
         });
       },
     });
   }
+
+  buscarVehiculo() {
+    if (this.busqueda.trim() !== '') {
+      this.datos = this.datos.filter((vehiculo) => {
+        return vehiculo.nombre.toLowerCase().includes(this.busqueda.toLowerCase());
+      }); console.log(this.datos)
+    } else {
+      this.ngOnInit();
+    }
+  }
+
 }
