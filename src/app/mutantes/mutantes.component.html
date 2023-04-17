@@ -47,6 +47,8 @@
         <th scope="col">VEHÍCULO</th>
         <th scope="col">NOMBRE VEHÍCULO</th>
         <th scope="col" style="text-align: center">EDITAR</th>
+        <th scope="col" style="text-align: center">ELIMINAR</th>
+        <th scope="col" style="text-align: center">VEHÍCULO</th>
       </tr>
     </thead>
     <tbody>
@@ -60,7 +62,18 @@
         <td>{{ item.vehiculo }}</td>
         <td>{{ item.nombre_vehiculo }}</td>
         <td style="text-align: center">
-          <i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)"></i>
+          <i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)" title="Modificar nombre o ciudad"></i>
+        </td>
+        <td style="text-align: center">
+          <i
+            class="fa fa-trash fa-xl"
+            (click)="eliminarDato(item.id)"
+            style="color: white"
+            title="Eliminar Mutante"
+          ></i>
+        </td>
+        <td style="text-align: center">
+          <i class="fa-solid fa-bicycle fa-xl" (click)="editarVehiculo(item)" title="Editar o Asignar Vehículo"></i>
         </td>
       </tr>
     </tbody>
