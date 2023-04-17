@@ -1,13 +1,13 @@
-.agregar{
+.agregar {
   justify-content: right;
   display: flex;
 }
-td{
+td {
   color: white !important;
   font-size: 16px;
 }
 
-th{
+th {
   font-size: 15px !important;
   background-color: brown;
   color: bisque;

@@ -62,7 +62,11 @@
         <td>{{ item.vehiculo }}</td>
         <td>{{ item.nombre_vehiculo }}</td>
         <td style="text-align: center">
-          <i class="fas fa-user-edit fa-xl" (click)="editarSeres(item)" title="Modificar nombre o ciudad"></i>
+          <i
+            class="fas fa-user-edit fa-xl"
+            (click)="editarSeres(item)"
+            title="Modificar nombre o ciudad"
+          ></i>
         </td>
         <td style="text-align: center">
           <i
@@ -73,12 +77,15 @@
           ></i>
         </td>
         <td style="text-align: center">
-          <i class="fa-solid fa-bicycle fa-xl" (click)="editarVehiculo(item)" title="Editar o Asignar Vehículo"></i>
+          <i
+            class="fa-solid fa-bicycle fa-xl"
+            (click)="editarVehiculo(item)"
+            title="Editar o Asignar Vehículo"
+          ></i>
         </td>
       </tr>
     </tbody>
   </table>
-
   <div class="paginador">
     <pagination-controls
       (pageChange)="config.currentPage = $event"
