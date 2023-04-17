@@ -1,0 +1,63 @@
+<div class="Contenido" style="overflow: auto">
+  <div class="row">
+    <div class="col" style="margin-top: -40px">
+      <div class="form-group" id="buscador" >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar vehículo..."
+          [(ngModel)]="busqueda"
+          name="busqueda"
+          (input)="buscarVehiculo()"
+        />
+      </div>
+    </div>
+    <div class="col" style="margin-top: -40px"></div>
+    <div class="col" style="margin-top: -17px">
+      <div class="agregar">
+        <i
+          class="fa-solid fa-circle-plus fa-2xl"
+          title="Agregar Vehiculo"
+          style="color: white"
+          (click)="mostrarFormulario()"
+        ></i>
+      </div>
+    </div>
+  </div>
+
+
+  <table
+    class="table table-striped"
+    style="text-align: center; margin-top: 20px"
+  >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">NOMBRE VEHÍCULO</th>
+        <th scope="col">TIPO VEHÍCULO</th>
+        <th>ACCIÓN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of datos | paginate : config">
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.tipo }}</td>
+        <td>
+          <i
+            class="fa fa-trash fa-xl"
+            (click)="eliminarDato(item.id)"
+            style="color: white"
+            title="Eliminar Vehículo"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="paginador">
+    <pagination-controls
+      (pageChange)="config.currentPage = $event"
+    ></pagination-controls>
+  </div>
+</div>

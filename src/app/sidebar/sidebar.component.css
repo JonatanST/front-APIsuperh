@@ -1,3 +1,26 @@
+.navegacion-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.navegacion-item.active {
+  background-color: black;
+  color: #fff;
+  right: -30px;
+  display: flex;
+  position: relative;
+}
+
+/* Estilo para el sidebar */
 nav {
-    height: 100%;
+  background-color: #1a5a81 !important;
+  color: #fff;
+  height: 100%;
+  padding: 10px;
+}
+
+.imglogo{
+  width: 90%;
 }

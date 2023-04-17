@@ -1,1 +1,105 @@
-<p>creacionseres works!</p>
+<div class="Contenido">
+  <form (submit)="enviarDatos($event)">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)]="nuevoMutante.nombre"
+            name="nombre"
+            required autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="grupo">Grupo:</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="grupo"
+            [(ngModel)]="nuevoMutante.grupo"
+            name="grupo"
+            required
+          >
+            <option value="Súper Héroe">Súper Héroe</option>
+            <option value="Villano">Villano</option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="ciudad">Ciudad:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="ciudad"
+            [(ngModel)]="nuevoMutante.ciudad"
+            name="ciudad"
+            required autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="condicion">Condición:</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="condicion"
+            [(ngModel)]="nuevoMutante.condicion"
+            name="condicion"
+            required
+          >
+            <option value="Libertad">Libertad</option>
+            <option value="Detenido">Detenido</option>
+            <option value="Desconocido">Desconocido</option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="tipo_superpoder">Tipo de superpoder:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="tipo_superpoder"
+            [(ngModel)]="nuevoMutante.tipo_superpoder"
+            name="tipo_superpoder"
+            required autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="tipo_superpoder">Tiene Vehículo:</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="vehiculo"
+            [(ngModel)]="nuevoMutante.vehiculo"
+            name="vehiculo"
+            required
+          >
+            <option value="Si tiene">Si tiene</option>
+            <option value="No tiene">No tiene</option>
+            <option value="Desconocido">Desconocido</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="nombre_vehiculo">Nombre Vehículo:</label>
+      <select class="form-select" id="nombre_vehiculo" [(ngModel)]="nuevoMutante.nombre_vehiculo" name="nombre_vehiculo" required>
+        <option value="">Seleccione un vehículo</option>
+        <option *ngFor="let vehiculo of vehiculos" [value]="vehiculo.nombre">{{ vehiculo.nombre }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Crear</button>
+  </form>
+</div>

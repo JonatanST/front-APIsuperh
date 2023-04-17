@@ -1,0 +1,10 @@
+td{
+    color: white !important;
+    font-size: 14px;
+}
+
+th {
+  font-size: 14px;
+  background-color: brown;
+  color: bisque;
+}
