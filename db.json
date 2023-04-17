@@ -1,14 +1,15 @@
 {
   "seres": [
     {
-      "nombre": "Spider-Man",
+      "nombre": "Spider Man",
       "grupo": "Súper Héroe",
-      "ciudad": "New York",
+      "ciudad": "Nueva York",
       "condicion": "Libertad",
       "tipo_superpoder": "Sentido arácnido, fuerza sobrehumana, capacidad de escalar paredes",
       "vehiculo": "Si tiene",
       "nombre_vehiculo": "Spider-Mobile",
-      "id": 1
+      "id": 1,
+      "tipo_vehiculo": ""
     },
     {
       "nombre": "Iron Man",
@@ -21,9 +22,9 @@
       "id": 2
     },
     {
-      "nombre": "Thor",
+      "nombre": "No tiene",
       "grupo": "Súper Héroe",
-      "ciudad": "Asgard",
+      "ciudad": "undefined",
       "condicion": "Libertad",
       "tipo_superpoder": "Fuerza sobrehumana, control del clima, capacidad de volar y manejo del martillo Mjolnir",
       "vehiculo": "No tiene",
@@ -106,15 +107,6 @@
       "vehiculo": "Si tiene",
       "nombre_vehiculo": "Octo-Ship",
       "id": 11
-    },
-    {
-      "nombre": "Red Skull",
-      "grupo": "Villano",
-      "ciudad": "Berlín",
-      "condicion": "Desconocido",
-      "tipo_superpoder": "Liderazgo nazi, habilidades de lucha, intelecto sobrehumano",
-      "vehiculo": "No tiene",
-      "id": 12
     },
     {
       "nombre": "Thanos",
@@ -232,6 +224,11 @@
       "nombre": "Thanos' Starship",
       "tipo": "Aéreo/Terrestre",
       "id": 21
+    },
+    {
+      "nombre": "motocicleta capitán América",
+      "tipo": "Terrestre",
+      "id": 22
     }
   ]
 }
