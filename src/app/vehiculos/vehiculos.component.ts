@@ -108,7 +108,8 @@ export class VehiculosComponent {
                 resolve();
               },
               (error) => {
-                reject(error); console.log(error)
+                reject(error);
+                console.log(error);
               }
             );
         });
@@ -119,11 +120,13 @@ export class VehiculosComponent {
   buscarVehiculo() {
     if (this.busqueda.trim() !== '') {
       this.datos = this.datos.filter((vehiculo) => {
-        return vehiculo.nombre.toLowerCase().includes(this.busqueda.toLowerCase());
-      }); console.log(this.datos)
+        return vehiculo.nombre
+          .toLowerCase()
+          .includes(this.busqueda.toLowerCase());
+      });
+      console.log(this.datos);
     } else {
       this.ngOnInit();
     }
   }
-
 }

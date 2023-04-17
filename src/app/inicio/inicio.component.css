@@ -1,4 +1,4 @@
-.imgmovi{
+.imgmovi {
   text-align: center;
 }
 
@@ -6,12 +6,12 @@ img {
   max-width: 100%;
 }
 
-p{
+p {
   font-size: 18px;
   color: ivory;
   text-align: justify;
 }
 
-#conteinicio{
-margin-top: -10px;
+#conteinicio {
+  margin-top: -10px;
 }

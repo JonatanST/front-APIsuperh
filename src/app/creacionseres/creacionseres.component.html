@@ -10,7 +10,8 @@
             id="nombre"
             [(ngModel)]="nuevoMutante.nombre"
             name="nombre"
-            required autocomplete="off"
+            required
+            autocomplete="off"
           />
         </div>
       </div>
@@ -39,7 +40,8 @@
             id="ciudad"
             [(ngModel)]="nuevoMutante.ciudad"
             name="ciudad"
-            required autocomplete="off"
+            required
+            autocomplete="off"
           />
         </div>
       </div>
@@ -71,7 +73,8 @@
             id="tipo_superpoder"
             [(ngModel)]="nuevoMutante.tipo_superpoder"
             name="tipo_superpoder"
-            required autocomplete="off"
+            required
+            autocomplete="off"
           />
         </div>
       </div>
@@ -95,9 +98,17 @@
     </div>
     <div class="form-group">
       <label for="nombre_vehiculo">Nombre Vehículo:</label>
-      <select class="form-select" id="nombre_vehiculo" [(ngModel)]="nuevoMutante.nombre_vehiculo" name="nombre_vehiculo" required>
+      <select
+        class="form-select"
+        id="nombre_vehiculo"
+        [(ngModel)]="nuevoMutante.nombre_vehiculo"
+        name="nombre_vehiculo"
+        required
+      >
         <option value="">Seleccione un vehículo</option>
-        <option *ngFor="let vehiculo of vehiculos" [value]="vehiculo.nombre">{{ vehiculo.nombre }}</option>
+        <option *ngFor="let vehiculo of vehiculos" [value]="vehiculo.nombre">
+          {{ vehiculo.nombre }}
+        </option>
       </select>
     </div>
     <button type="submit" class="btn btn-primary">Crear</button>

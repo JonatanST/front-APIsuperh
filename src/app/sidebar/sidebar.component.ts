@@ -4,11 +4,10 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
     // Detectar cuando la ruta cambia
@@ -21,7 +20,9 @@ export class SidebarComponent implements OnInit {
           activeElement.classList.remove('active');
         }
         // Agregar la clase active al elemento actual
-        const currentElement = document.querySelector(`.navegacion-item a[href='${event.urlAfterRedirects}']`)?.parentElement;
+        const currentElement = document.querySelector(
+          `.navegacion-item a[href='${event.urlAfterRedirects}']`
+        )?.parentElement;
         if (currentElement) {
           currentElement.classList.add('active');
         }
@@ -39,5 +40,4 @@ export class SidebarComponent implements OnInit {
     // Agregar la clase active al elemento seleccionado
     element.classList.add('active');
   }
-
 }

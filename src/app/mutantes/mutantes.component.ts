@@ -83,56 +83,61 @@ export class MutantesComponent {
     });
   }
 
- /* Metodo para editar o asignar Vehiculo a Mutantes */
-editarVehiculo(item: any) {
-  this.http.get<any[]>('http://localhost:3000/vehiculos').subscribe((datos) => {
-    // Crear un array con los nombres de los vehículos
-    const nombresVehiculos = datos.map((v) => v.nombre);
-
-    Swal.fire({
-      title: 'Editar o Asignar Vehículo',
-      html:
-        '<label> ¿Vehículo? </label><br><select id="swal-input1" class="form-select" value="' +
-        item.vehiculo +
-        '">' +
-        '<option value="Si tiene">Si tiene</option>' +
-        '<option value="No tiene">No tiene</option>' +
-        '<option value="Desconocido">Desconocido</option>' +
-        '</select>' +
-        '<label>Nombre Vehículo:</label><br><select id="swal-input2" class="form-select" value="' +
-        item.nombre_vehiculo +
-        '">' +
-        '<option value="">Seleccione un vehículo</option>' +
-        nombresVehiculos
-          .map(
-            (nombre) =>
-              '<option value="' + nombre + '">' + nombre + '</option>'
-          )
-          .join('') +
-        '</select>',
-      focusConfirm: false,
-      preConfirm: () => {
-        return [
-          (document.getElementById('swal-input1') as HTMLInputElement).value,
-          (document.getElementById('swal-input2') as HTMLInputElement).value,
-        ];
-      },
-    }).then((result: any) => {
-      if (result.value) {
-        item.vehiculo = result.value[0];
-        item.nombre_vehiculo = result.value[1];
-        this.http.put(`http://localhost:3000/seres/${item.id}`, item).subscribe(
-          (response: any) => {
-            console.log(response);
+  /* Metodo para editar o asignar Vehiculo a Mutantes */
+  editarVehiculo(item: any) {
+    this.http
+      .get<any[]>('http://localhost:3000/vehiculos')
+      .subscribe((datos) => {
+        // Crear un array con los nombres de los vehículos
+        const nombresVehiculos = datos.map((v) => v.nombre);
+        Swal.fire({
+          title: 'Editar o Asignar Vehículo',
+          html:
+            '<label> ¿Vehículo? </label><br><select id="swal-input1" class="form-select" value="' +
+            item.vehiculo +
+            '">' +
+            '<option value="Si tiene">Si tiene</option>' +
+            '<option value="No tiene">No tiene</option>' +
+            '<option value="Desconocido">Desconocido</option>' +
+            '</select>' +
+            '<label>Nombre Vehículo:</label><br><select id="swal-input2" class="form-select" value="' +
+            item.nombre_vehiculo +
+            '">' +
+            '<option value="">Seleccione un vehículo</option>' +
+            nombresVehiculos
+              .map(
+                (nombre) =>
+                  '<option value="' + nombre + '">' + nombre + '</option>'
+              )
+              .join('') +
+            '</select>',
+          focusConfirm: false,
+          preConfirm: () => {
+            return [
+              (document.getElementById('swal-input1') as HTMLInputElement)
+                .value,
+              (document.getElementById('swal-input2') as HTMLInputElement)
+                .value,
+            ];
           },
-          (error: any) => {
-            console.log(error);
+        }).then((result: any) => {
+          if (result.value) {
+            item.vehiculo = result.value[0];
+            item.nombre_vehiculo = result.value[1];
+            this.http
+              .put(`http://localhost:3000/seres/${item.id}`, item)
+              .subscribe(
+                (response: any) => {
+                  console.log(response);
+                },
+                (error: any) => {
+                  console.log(error);
+                }
+              );
           }
-        );
-      }
-    });
-  });
-}
+        });
+      });
+  }
 
   /* Metodo Para busqueda por nombre */
   buscarMutante() {
