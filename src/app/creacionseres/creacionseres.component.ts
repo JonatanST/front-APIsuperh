@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-creacionseres',
   templateUrl: './creacionseres.component.html',
@@ -13,6 +13,7 @@ export class CreacionseresComponent implements OnInit {
   vehiculoSeleccionado: any;
 
   constructor(private http: HttpClient) {}
+
   ngOnInit(): void {
     this.http.get('http://localhost:3000/seres').subscribe((res: any) => {
       this.datos = res;
@@ -24,14 +25,51 @@ export class CreacionseresComponent implements OnInit {
         this.vehiculos = datos;
       });
   }
-  /* Metodo para crear mutantes nuevos */
+
   enviarDatos(event: Event) {
     event.preventDefault();
+
+    if (!this.nuevoMutante.nombre) {
+      Swal.fire({
+        title: 'Error',
+        text: 'El nombre es requerido',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
+    if (!this.nuevoMutante.ciudad) {
+      Swal.fire({
+        title: 'Error',
+        text: 'La ciudad es requerida',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
+    if (!this.nuevoMutante.tipo_superpoder) {
+      Swal.fire({
+        title: 'Error',
+        text: 'El tipo de superpoder es requerido',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
     this.http
       .post('http://localhost:3000/seres', this.nuevoMutante)
       .subscribe((res: any) => {
         this.datos.push(res);
         this.nuevoMutante = {};
+        Swal.fire({
+          title: 'Éxito',
+          text: 'Mutante creado correctamente',
+          icon: 'success',
+          confirmButtonText: 'Ok',
+        });
       });
   }
 }

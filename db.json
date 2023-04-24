@@ -117,6 +117,46 @@
       "vehiculo": "Si tiene",
       "nombre_vehiculo": "Thanos' Starship",
       "id": 13
+    },
+    {
+      "nombre": "Pepito",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotá",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "No tiene",
+      "id": 14
+    },
+    {
+      "grupo": "Súper Héroe",
+      "id": 15
+    },
+    {
+      "nombre": "pepito",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotá",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "No tiene",
+      "id": 16
+    },
+    {
+      "nombre": "pepito",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bgotoa",
+      "condicion": "Detenido",
+      "tipo_superpoder": "velocidad",
+      "vehiculo": "Si tiene",
+      "id": 17
+    },
+    {
+      "nombre": "pepit2",
+      "grupo": "Súper Héroe",
+      "ciudad": "bogo",
+      "condicion": "Detenido",
+      "tipo_superpoder": "velocidad",
+      "vehiculo": "No tiene",
+      "id": 18
     }
   ],
   "vehiculos": [
