@@ -128,17 +128,14 @@
       "id": 14
     },
     {
-      "grupo": "Súper Héroe",
-      "id": 15
-    },
-    {
       "nombre": "pepito",
       "grupo": "Súper Héroe",
       "ciudad": "Bogotá",
       "condicion": "Libertad",
       "tipo_superpoder": "Velocidad",
       "vehiculo": "No tiene",
-      "id": 16
+      "id": 16,
+      "nombre_vehiculo": ""
     },
     {
       "nombre": "pepito",
@@ -147,7 +144,8 @@
       "condicion": "Detenido",
       "tipo_superpoder": "velocidad",
       "vehiculo": "Si tiene",
-      "id": 17
+      "id": 17,
+      "nombre_vehiculo": "Goblin Glider"
     },
     {
       "nombre": "pepit2",
@@ -157,6 +155,60 @@
       "tipo_superpoder": "velocidad",
       "vehiculo": "No tiene",
       "id": 18
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotasa",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "Si tiene",
+      "id": 19
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotasa",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "Si tiene",
+      "id": 20
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotasa",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "Si tiene",
+      "id": 21
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotasa",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "Si tiene",
+      "id": 22
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogotasa",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad",
+      "vehiculo": "Si tiene",
+      "id": 23
+    },
+    {
+      "nombre": "Pepito Perez",
+      "grupo": "Súper Héroe",
+      "ciudad": "Bogota",
+      "condicion": "Libertad",
+      "tipo_superpoder": "Velocidad Extrema",
+      "vehiculo": "No tiene",
+      "id": 24
     }
   ],
   "vehiculos": [
@@ -269,6 +321,11 @@
       "nombre": "motocicleta capitán América",
       "tipo": "Terrestre",
       "id": 22
+    },
+    {
+      "nombre": "Avioncito",
+      "tipo": "Acuático",
+      "id": 23
     }
   ]
 }
