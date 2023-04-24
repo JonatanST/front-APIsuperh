@@ -39,6 +39,16 @@ export class CreacionseresComponent implements OnInit {
       return;
     }
 
+    if (!this.nuevoMutante.grupo) {
+      Swal.fire({
+        title: 'Error',
+        text: 'El Grupo es Requerido',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
     if (!this.nuevoMutante.ciudad) {
       Swal.fire({
         title: 'Error',
@@ -49,10 +59,30 @@ export class CreacionseresComponent implements OnInit {
       return;
     }
 
+    if (!this.nuevoMutante.condicion) {
+      Swal.fire({
+        title: 'Error',
+        text: 'La condición es requerida',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
     if (!this.nuevoMutante.tipo_superpoder) {
       Swal.fire({
         title: 'Error',
         text: 'El tipo de superpoder es requerido',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
+      return;
+    }
+
+    if (!this.nuevoMutante.vehiculo) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Debe especificar si el mutante tiene o no vehiculo',
         icon: 'error',
         confirmButtonText: 'Ok',
       });
