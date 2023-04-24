@@ -76,11 +76,54 @@ export class VehiculosComponent {
       confirmButtonText: 'Guardar',
       cancelButtonText: 'Cancelar',
       focusConfirm: false,
+      didOpen: () => {
+        // Obtener los botones de "Guardar" y "Cancelar"
+        const confirmButton = Swal.getConfirmButton();
+        const cancelButton = Swal.getCancelButton();
+
+        // Deshabilitar los botones si existen
+        if (confirmButton !== null) {
+          confirmButton.disabled = true;
+        }
+        if (cancelButton !== null) {
+          cancelButton.disabled = true;
+        }
+
+        // Buscar los campos del formulario
+        const form = document.getElementById('formulario') as HTMLFormElement;
+        const nombre = form['nombre'] as HTMLInputElement;
+        const tipo = form['tipo'] as HTMLSelectElement;
+
+        // Agregar un evento para habilitar los botones cuando se completen los campos
+        nombre.addEventListener('input', () => {
+          if (confirmButton !== null) {
+            confirmButton.disabled = !nombre.value || !tipo.value;
+          }
+          if (cancelButton !== null) {
+            cancelButton.disabled = false;
+          }
+        });
+        tipo.addEventListener('input', () => {
+          if (confirmButton !== null) {
+            confirmButton.disabled = !nombre.value || !tipo.value;
+          }
+          if (cancelButton !== null) {
+            cancelButton.disabled = false;
+          }
+        });
+      },
       preConfirm: () => {
         return new Promise<void>((resolve, reject) => {
           const form = document.getElementById('formulario') as HTMLFormElement;
           const nombre = form['nombre'].value;
           const tipo = form['tipo'].value;
+
+          // Validar si los campos están vacíos
+          if (!nombre || !tipo) {
+            Swal.showValidationMessage('Por favor, complete todos los campos.');
+            reject('Campos vacíos');
+            return;
+          }
 
           // Validar si el vehículo ya existe
           if (this.datos.some((item: any) => item.nombre === nombre)) {
